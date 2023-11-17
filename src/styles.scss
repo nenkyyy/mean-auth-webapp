@@ -1,0 +1,139 @@
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+input:disabled,
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+.set-1 {
+  width: 8.33333333%;
+}
+
+.set-2 {
+  width: 16.66666667%;
+}
+
+.set-3 {
+  width: 25%;
+}
+
+.set-4 {
+  width: 33.33333333%;
+}
+
+.set-5 {
+  width: 41.66666667%;
+}
+
+.set-6 {
+  width: 50%;
+}
+
+.set-7 {
+  width: 58.33333333%;
+}
+
+.set-8 {
+  width: 66.66666667%;
+}
+
+.set-9 {
+  width: 75%;
+}
+
+.set-10 {
+  width: 83.33333333%;
+}
+
+.set-11 {
+  width: 91.66666667%;
+}
+
+.set-12 {
+  width: 100%;
+}
+
+.set-1,
+.set-2,
+.set-3,
+.set-4,
+.set-5,
+.set-6,
+.set-7,
+.set-8,
+.set-9,
+.set-10,
+.set-11,
+.set-12 {
+  float: left;
+}
+
+.set-1:before,
+.set-2:before,
+.set-3:before,
+.set-4:before,
+.set-5:before,
+.set-6:before,
+.set-7:before,
+.set-8:before,
+.set-9:before,
+.set-10:before,
+.set-11:before,
+.set-12:before {
+  content: " ";
+  display: table;
+}
+
+.set-1:after,
+.set-2:after,
+.set-3:after,
+.set-4:after,
+.set-5:after,
+.set-6:after,
+.set-7:after,
+.set-8:after,
+.set-9:after,
+.set-10:after,
+.set-11:after,
+.set-12:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.ctrls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  * {
+    margin: 0;
+  }
+
+  mat-spinner {
+    margin-left: 20px !important;
+  }
+}
+
+.error {
+  color: #ff0000;
+  font-weight: bold;
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 20px;
+}

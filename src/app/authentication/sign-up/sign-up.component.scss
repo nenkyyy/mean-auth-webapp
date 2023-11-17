@@ -1,0 +1,13 @@
+:host {
+  width: 100%;
+  float: left;
+  padding: 40px;
+
+  .set-6:nth-child(odd) {
+    padding-right: 10px;
+  }
+
+  .set-6:nth-child(even) {
+    padding-left: 10px;
+  }
+}
