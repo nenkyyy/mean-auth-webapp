@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { UtilityService } from 'src/app/services/utility.service';
 
@@ -14,13 +14,12 @@ export class SignUpComponent implements OnInit {
   public error: any = null;
 
   constructor(
-    public formBuilder: FormBuilder,
     public authenticationService: AuthenticationService,
     public utilityService: UtilityService
   ) { }
 
   ngOnInit(): void {
-    this.formGroup = this.formBuilder.group({
+    this.formGroup = this.utilityService.formBuilder.group({
       firstname: ['', [Validators.required]],
       lastname: ['', [Validators.required]],
       email: ['', [Validators.required]],

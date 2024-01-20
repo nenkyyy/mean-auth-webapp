@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -7,7 +8,8 @@ import { Router } from '@angular/router';
 export class UtilityService {
 
   constructor(
-    public router: Router
+    public formBuilder: FormBuilder,
+    public router: Router,
   ) { }
 
   linkMe(url: string) { this.router.navigateByUrl(url); }

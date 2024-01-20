@@ -13,17 +13,18 @@ export class AuthenticationService {
     public endpointService: EndpointService
   ) { }
 
+  get getAccessToken() { return localStorage.getItem(this.accessToken); }
   get isAuthenticated() { return !!localStorage.getItem(this.accessToken); }
 
   appSignUp(payload: any) {
     return this.httpClient.post(
-      this.endpointService['apiEndpoint'] + this.endpointService['signUpEndpoint'], payload
+      this.endpointService['ep_signUp'], payload
     );
   }
 
   appSignIn(payload: any) {
     return this.httpClient.post(
-      this.endpointService['apiEndpoint'] + this.endpointService['signInEndpoint'], payload
+      this.endpointService['ep_signIn'], payload
     );
   }
 }
